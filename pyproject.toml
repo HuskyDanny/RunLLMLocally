@@ -37,6 +37,7 @@ dependencies = [
     "huggingface-hub>=0.15.0,<1.0.0",
     "tokenizers>=0.13.0,<1.0.0",
     "safetensors>=0.3.0,<1.0.0",
+    "Pillow>=9.0.0,<11.0.0",
 ]
 
 [project.optional-dependencies]
@@ -64,6 +65,7 @@ Repository = "https://github.com/yourusername/run-llm-locally"
 
 [project.scripts]
 run-deepseek = "run_deepseek_improved:main"
+run-multimodal = "run_multimodal:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
